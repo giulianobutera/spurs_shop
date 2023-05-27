@@ -1,4 +1,7 @@
+// ignore_for_file: unnecessary_this
+
 import 'package:flutter/material.dart';
+import 'package:spurs_shop/config/theme/app_theme.dart';
 
 class LoginBackground extends StatelessWidget {
   final Widget child;
@@ -28,7 +31,7 @@ class _BackgroundColor extends StatelessWidget {
     return Container(
       width: size.width,
       height: size.height,
-      decoration: const BoxDecoration(color: Color.fromARGB(255, 19, 34, 87)),
+      decoration: const BoxDecoration(color: navyBlue),
     );
   }
 }

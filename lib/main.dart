@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Spurs Shop',
       theme: appTheme,
-      initialRoute: 'welcome',
+      initialRoute: 'home',
       routes: {
         'welcome': (_) => const WelcomeScreen(),
         'login': (_) => const LoginScreen(),

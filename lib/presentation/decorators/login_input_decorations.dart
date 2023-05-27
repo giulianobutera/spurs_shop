@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spurs_shop/config/theme/app_theme.dart';
 
 class InputDecorations {
   static InputDecoration authInputDecoration({
@@ -8,18 +9,17 @@ class InputDecorations {
   }) {
     return InputDecoration(
       enabledBorder: const UnderlineInputBorder(
-        borderSide: BorderSide(color: Color.fromARGB(255, 19, 34, 87)),
+        borderSide: BorderSide(color: navyBlue),
       ),
       focusedBorder: const UnderlineInputBorder(
-          borderSide:
-              BorderSide(color: Color.fromARGB(255, 239, 239, 7), width: 2)),
+          borderSide: BorderSide(color: yellow, width: 2)),
       hintText: hintText,
       labelText: labelText,
       labelStyle: const TextStyle(color: Colors.black),
       prefixIcon: prefixIcon != null
           ? Icon(
               prefixIcon,
-              color: const Color.fromARGB(255, 19, 34, 87),
+              color: navyBlue,
             )
           : null,
     );

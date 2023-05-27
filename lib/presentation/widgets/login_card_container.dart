@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_this
+
 import 'package:flutter/material.dart';
 
 class CardContainer extends StatelessWidget {
@@ -11,11 +13,11 @@ class CardContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 32),
+      padding: const EdgeInsets.symmetric(horizontal: 32),
       child: Card(
         elevation: 3,
         child: Padding(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: this.child,
         ),
 
@@ -27,17 +29,17 @@ class CardContainer extends StatelessWidget {
     );
   }
 
-  BoxDecoration _createCardShape() => BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(25),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black12,
-              blurRadius: 15,
-              offset: Offset(
-                0,
-                5,
-              ),
-            )
-          ]);
+  // BoxDecoration _createCardShape() => BoxDecoration(
+  //         color: Colors.white,
+  //         borderRadius: BorderRadius.circular(25),
+  //         boxShadow: [
+  //           BoxShadow(
+  //             color: Colors.black12,
+  //             blurRadius: 15,
+  //             offset: Offset(
+  //               0,
+  //               5,
+  //             ),
+  //           )
+  //         ]);
 }
