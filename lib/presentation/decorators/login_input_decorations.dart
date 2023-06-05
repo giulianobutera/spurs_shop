@@ -8,18 +8,18 @@ class InputDecorations {
     IconData? prefixIcon,
   }) {
     return InputDecoration(
-      enabledBorder: const UnderlineInputBorder(
-        borderSide: BorderSide(color: navyBlue),
+      enabledBorder: UnderlineInputBorder(
+        borderSide: BorderSide(color: appColors.navyBlue),
       ),
-      focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: yellow, width: 2)),
+      focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: appColors.yellow, width: 2)),
       hintText: hintText,
       labelText: labelText,
-      labelStyle: const TextStyle(color: Colors.black),
+      labelStyle: TextStyle(color: appColors.black),
       prefixIcon: prefixIcon != null
           ? Icon(
               prefixIcon,
-              color: navyBlue,
+              color: appColors.navyBlue,
             )
           : null,
     );

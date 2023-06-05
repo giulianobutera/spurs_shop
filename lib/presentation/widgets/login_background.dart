@@ -31,7 +31,7 @@ class _BackgroundColor extends StatelessWidget {
     return Container(
       width: size.width,
       height: size.height,
-      decoration: const BoxDecoration(color: navyBlue),
+      decoration: BoxDecoration(color: appColors.navyBlue),
     );
   }
 }
