@@ -129,41 +129,44 @@ class _BodyDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     final appTheme = Provider.of<AppThemeProvider>(context);
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        SizedBox(
-          width: size.width,
-          child: Image.asset(product.image),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(15),
-          child: Align(
-            alignment: Alignment.topLeft,
-            child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(
-                product.title,
-                style: TextStyle(
-                    color: appTheme.isLightTheme
-                        ? appColors.navyBlue
-                        : appColors.white,
-                    fontSize: 25),
-              ),
-              Text(
-                'AR\$ ${product.price}',
-                style: TextStyle(
-                    color: appTheme.isLightTheme
-                        ? appColors.navyBlue
-                        : appColors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20),
-              ),
-              Text(product.description)
-            ]),
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: size.width,
+            child: Image.asset(product.image),
           ),
-        )
-      ],
+          Padding(
+            padding: const EdgeInsets.all(15),
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      product.title,
+                      style: TextStyle(
+                          color: appTheme.isLightTheme
+                              ? appColors.navyBlue
+                              : appColors.white,
+                          fontSize: 25),
+                    ),
+                    Text(
+                      'AR\$ ${product.price}',
+                      style: TextStyle(
+                          color: appTheme.isLightTheme
+                              ? appColors.navyBlue
+                              : appColors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20),
+                    ),
+                    Text(product.description)
+                  ]),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
