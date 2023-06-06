@@ -75,7 +75,7 @@ class CartScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-                width: (size.width * 0.40),
+                width: (size.width * 0.35),
                 child: Text(
                   'TOTAL: AR\$ ${cart.totalPrice}',
                   style: TextStyle(
@@ -86,7 +86,7 @@ class CartScreen extends StatelessWidget {
                 )),
             const SizedBox(width: 15),
             Padding(
-              padding: const EdgeInsets.only(top: 5),
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: CustomButton(
                   text: 'Finalizar compra',
                   textColor: appTheme.isLightTheme

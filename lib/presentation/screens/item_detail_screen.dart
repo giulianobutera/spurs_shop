@@ -91,7 +91,7 @@ class ItemDetailScreen extends StatelessWidget {
             ),
             const SizedBox(width: 15),
             Padding(
-              padding: const EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: CustomButton(
                   text: 'Añadir al carrito',
                   textColor: appTheme.isLightTheme
